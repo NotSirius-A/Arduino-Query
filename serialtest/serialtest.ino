@@ -1,25 +1,27 @@
 #include "Query.h"
 
-Query Query;
+Arduino_Query Query;
 
 void setup() {
   
-  Serial.begin(BAUD_RATE);
-  pinMode(LED_BUILTIN, OUTPUT);
+  Query.begin();
+ 
   Serial.println("Starting");
+  pinMode(LED_BUILTIN, OUTPUT);
+
 
 }
 
 void loop() {
 
-  //recieveAndExecuteQuery();
-
-  
   bool isSplit = Query.split(Query.recieve());
-  if(isSplit){ Query.executeAndRespond(); }
-  Query.flush();
+  if(isSplit){ 
+    Query.executeAndRespond(); 
+  }
  
+  Query.flush();
   
+ 
   delay(100);
   
 }
