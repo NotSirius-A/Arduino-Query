@@ -1,0 +1,31 @@
+/*
+  Query.h - Library for creating and managing arduino queries.
+  Created by NotSirius-A
+  Open source
+
+  Author: https://github.com/NotSirius-A
+  Library: https://github.com/NotSirius-A/Arduino-Query
+*/
+
+Thank You for using my library!
+
+/*  ******** GUIDE ********  */
+
+Necessary steps:
+1) Find the Arduino-Query library in the custom-library folder (default: C:\Users\fgrzy\Documents\Arduino\libraries\Arduino-Query)
+2) Open the src folder it should contain Query_config.h and Query_commands.h files
+3) Review the config file
+4) Open the commands file
+5) Contents of the function PathX will be executed when START_OF_PATHX will be the first word of the entered query
+   this is where users specify what actions Arduino will perform when adequate queries are supplied (example at the bottom)
+6) Crucial variables:
+   - "char* _query" contains the entire message without QUERY_ENDING specified in the config file
+   - "char* _queryWord[MAX_INPUT_WORDS]" contains individual words
+
+Functions:
+ - TODO
+
+Suggestions:
+ - Query_config.h contains an option to turn on debug mode, I recommend to turning it during first uses
+ - Query_commands.h can be moved to a more suitable location, in order to do that user must supply new location to
+   the PATH variable in Query_config.h

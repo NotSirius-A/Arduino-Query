@@ -23,7 +23,7 @@
 
 /* !********* DEBUG *********! */
 
-#define Q_DEBUG true
+#define Q_DEBUG false
 
 /* !********* DEBUG *********! */
 

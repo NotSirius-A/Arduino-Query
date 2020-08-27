@@ -48,6 +48,9 @@ turns OFF LED when followed by "-d";
 
 
 void Arduino_Query::Path1(){
+  
+  pinMode(LED_BUILTIN, OUTPUT);
+  
   if(strcmp(_queryWord[1], "-e") == 0){
     digitalWrite(LED_BUILTIN, HIGH);
     if(ALLOW_RESPONSES){ Serial.println("OK, LED is now enabled"); }
