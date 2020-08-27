@@ -14,13 +14,13 @@ class Arduino_Query{
     void Path7();
     void Path8();
     void Path9();
+	  
+	  char* _queryWord[MAX_INPUT_WORDS];
+    char* _query = "";
   
   public:
     Query();
       
-    char* _queryWord[MAX_INPUT_WORDS];
-    char* _query = "";
-
     void begin();
     void flush();
     char* recieve();
