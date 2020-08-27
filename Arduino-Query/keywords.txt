@@ -1,0 +1,23 @@
+#######################################
+# Syntax Coloring Map Query
+#######################################
+
+#######################################
+# Datatypes (KEYWORD1)
+#######################################
+
+Query	KEYWORD1
+
+#######################################
+# Methods and Functions (KEYWORD2)
+#######################################
+begin	KEYWORD2
+receive	KEYWORD2
+split	KEYWORD2
+executeAndRespond	KEYWORD2
+flush	KEYWORD2
+
+
+#######################################
+# Constants (LITERAL1)
+#######################################
