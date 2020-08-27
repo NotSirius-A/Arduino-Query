@@ -2,7 +2,6 @@
 #define QUERY_COMMANDS_H
 
 
-
 #define START_OF_PATH_1 "1-1"
 #define START_OF_PATH_2 "2-2"
 #define START_OF_PATH_3 "3-3"
@@ -33,7 +32,10 @@ void Arduino_Query::Path8(){}
 void Arduino_Query::Path9(){}
 
 /* 
----- Example ---- 
+  ------- Example ------- 
+it reacts to START_OF_PATH1; turns ON built-in LED when followed by "-e" or if followed by valid time = t in miliseconds turns LED on for t miliseconds;
+turns OFF LED when followed by "-d";
+
 
 void Arduino_Query::Path1(){
   if(strcmp(_queryWord[1], "-e") == 0){
@@ -42,7 +44,7 @@ void Arduino_Query::Path1(){
     unsigned int delayTime = atoi(_queryWord[2]);
       //atoi returns *undefined* if string is not a number
       
-    if(delayTime < 99999 && delayTime > 0){
+    if(delayTime < 60000 && delayTime > 0){
       if(ALLOW_RESPONSES){ Serial.print("For "); Serial.print(delayTime); Serial.println(" miliseconds"); }
       delay(delayTime);
       digitalWrite(LED_BUILTIN, LOW);
@@ -54,14 +56,11 @@ void Arduino_Query::Path1(){
     if(ALLOW_RESPONSES){
       Serial.print("\"");
       Serial.print(_queryWord[1]);
-      Serial.println("\" Could not be understood try '-e' or '-d' ");
+      Serial.println("\" Could not be understood try "-e" or "-d" ");
     }  
     
   }
 }
-
-
-
 */
 
 #endif
