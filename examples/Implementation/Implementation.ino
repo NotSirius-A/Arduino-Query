@@ -1,4 +1,4 @@
-#include "Query.h"
+#include <Query.h>
 
 Arduino_Query Query;
 
