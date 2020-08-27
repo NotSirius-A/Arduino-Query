@@ -9,6 +9,7 @@
 
 #ifndef QUERY_COMMANDS_H
 #define QUERY_COMMANDS_H
+#include <Arduino.h>
 
 
 #define START_OF_PATH_1 "1-1"

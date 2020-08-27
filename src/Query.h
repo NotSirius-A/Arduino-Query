@@ -9,7 +9,7 @@
 
 #ifndef QUERY_H
 #define QUERY_H
-#include "arduino.h"
+#include <Arduino.h>
 #include "Query_config.h"
 
 class Arduino_Query{
@@ -31,10 +31,10 @@ class Arduino_Query{
     Query();
       
     void begin();
-    void flush();
-    char* recieve();
+    char* receive();
     bool split(char* query);
     void executeAndRespond();
+	void flush();
 
 };
 

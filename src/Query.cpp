@@ -30,7 +30,7 @@ void Arduino_Query::begin(){
   }
 }
 
-char* Arduino_Query::recieve(){
+char* Arduino_Query::receive(){
 
   //returns NULL if theres no serial incoming
   if(Serial.available() == 0){ return '\0'; }
