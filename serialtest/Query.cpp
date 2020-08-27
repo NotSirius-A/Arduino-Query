@@ -1,3 +1,12 @@
+/*
+  Query.h - Library for creating and managing arduino queries.
+  Created by NotSirius-A 
+  Open source
+  
+  Author: https://github.com/NotSirius-A
+  Library: https://github.com/NotSirius-A/Arduino-Query
+*/
+
 #include "Query.h"
 #include PATH
 

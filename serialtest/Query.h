@@ -1,3 +1,12 @@
+/*
+  Query.h - Library for creating and managing arduino queries.
+  Created by NotSirius-A 
+  Open source
+  
+  Author: https://github.com/NotSirius-A
+  Library: https://github.com/NotSirius-A/Arduino-Query
+*/
+
 #ifndef QUERY_H
 #define QUERY_H
 #include "arduino.h"
@@ -15,7 +24,7 @@ class Arduino_Query{
     void Path8();
     void Path9();
 	  
-	  char* _queryWord[MAX_INPUT_WORDS];
+	char* _queryWord[MAX_INPUT_WORDS];
     char* _query = "";
   
   public:
