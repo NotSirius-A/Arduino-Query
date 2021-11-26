@@ -1,3 +1,5 @@
+This a small Arduino library that helps to implement query-like commands over serial connection.
+
 Necessary steps:
 1) Find the Arduino-Query library in the custom-library folder (default: C:\Users\fgrzy\Documents\Arduino\libraries\Arduino-Query)
 2) Open the src folder it should contain Query_config.h and Query_commands.h files
