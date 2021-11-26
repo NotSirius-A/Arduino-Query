@@ -1,16 +1,3 @@
-/*
-  Query.h - Library for creating and managing arduino queries.
-  Created by NotSirius-A
-  Open source
-
-  Author: https://github.com/NotSirius-A
-  Library: https://github.com/NotSirius-A/Arduino-Query
-*/
-
-Thank You for using my library!
-
-/*  ******** GUIDE ********  */
-
 Necessary steps:
 1) Find the Arduino-Query library in the custom-library folder (default: C:\Users\fgrzy\Documents\Arduino\libraries\Arduino-Query)
 2) Open the src folder it should contain Query_config.h and Query_commands.h files
